@@ -11,5 +11,5 @@ var r=require("./bundle-url").getBundleURL;function e(r){Array.isArray(r)||(r=[r
 },{"./bundle-url":"CSru"}],"lHcC":[function(require,module,exports) {
 module.exports=function(t){return fetch(t).then(function(t){return WebAssembly.instantiateStreaming?WebAssembly.instantiateStreaming(t):t.arrayBuffer().then(function(t){return WebAssembly.instantiate(t)})}).then(function(t){return t.instance.exports})};
 },{}],0:[function(require,module,exports) {
-var b=require("Cm3W");b.register("wasm",require("lHcC"));b.load([["calc.0d461a7f.wasm","s3NF"],["test10.3824c9ed.wasm","QMRy"]]).then(function(){require("C0fB");});
+var b=require("Cm3W");b.register("wasm",require("lHcC"));b.load([["calc.9afc52e9.wasm","s3NF"],["test10.3824c9ed.wasm","QMRy"]]).then(function(){require("C0fB");});
 },{}]},{},[0], null)
