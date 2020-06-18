@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/target
+/dist1
+/dist2
+/.cache
+/.parcel-cache
+/pkg

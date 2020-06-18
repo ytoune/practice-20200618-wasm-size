@@ -1,0 +1,10 @@
+/dist
+/dist1
+/dist2
+/node_modules
+/.cache
+/.parcel-cache
+/scripts/sandbox**
+/yarn-error.log*
+/target
+/pkg

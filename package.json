@@ -1,0 +1,54 @@
+{
+  "name": "wasm-size-20200618",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "ytoune"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prebuild": "yarn ts-node scripts/prebuild.ts",
+    "build1": "parcel build src/index1.html --out-dir dist/dist1 --no-cache --no-source-maps --public-url ./",
+    "build2": "parcel build src/index2.html --out-dir dist/dist2 --no-cache --no-source-maps --public-url ./",
+    "release": "yarn ts-node scripts/release.ts",
+    "test": "eslint 'src/**/*.ts' && tsc --noEmit && jest",
+    "ts-node": "ts-node --files -O '{\"module\":\"commonjs\"}'"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.4",
+    "@types/fs-extra": "9.0.1",
+    "@types/gh-pages": "2.2.0",
+    "@types/jest": "26.0.0",
+    "@types/node": "14.0.13",
+    "@typescript-eslint/eslint-plugin": "3.3.0",
+    "@typescript-eslint/parser": "3.3.0",
+    "eslint": "7.2.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-import-resolver-typescript": "2.0.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-prettier": "3.1.4",
+    "fs-extra": "9.0.1",
+    "gh-pages": "3.0.0",
+    "jest": "26.0.1",
+    "parcel": "1.12.4",
+    "prettier": "2.0.5",
+    "ts-jest": "26.1.0",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "ts-jest"
+    },
+    "projects": [
+      "<rootDir>"
+    ]
+  }
+}
