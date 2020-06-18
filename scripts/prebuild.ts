@@ -14,7 +14,7 @@ const content = () => `<!DOCTYPE html>
 <p><a href="./dist1/index1.html">js</a></p>
 <p><a href="./dist2/index2.html">wasm</a></p>
 <hr/>
-<p><a href="./dist1/index0.html">比較用</a></p>
+<p><a href="./dist0/index0.html">比較用</a></p>
 </body>
 </html>
 `

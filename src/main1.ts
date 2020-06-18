@@ -9,10 +9,10 @@ btn.addEventListener('click', () => {
 	calc(0, 8)
 	calc(12, 8)
 	calc(3400, 6596)
-	const s = Date.now()
+	const s = performance.now()
 	const no = calc(12707, 12319)
 	for (const p of args) calc(p[0], p[1])
-	const e = Date.now()
+	const e = performance.now()
 	const el = document.createElement('p')
 	el.textContent = `${no} (${e - s})`
 	document.body.appendChild(el)
