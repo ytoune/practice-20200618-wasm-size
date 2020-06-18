@@ -12,6 +12,7 @@
   "private": true,
   "scripts": {
     "prebuild": "yarn ts-node scripts/prebuild.ts",
+    "build0": "parcel build src/index0.html --out-dir dist/dist0 --no-cache --no-source-maps --public-url ./",
     "build1": "parcel build src/index1.html --out-dir dist/dist1 --no-cache --no-source-maps --public-url ./",
     "build2": "parcel build src/index2.html --out-dir dist/dist2 --no-cache --no-source-maps --public-url ./",
     "release": "yarn ts-node scripts/release.ts",
