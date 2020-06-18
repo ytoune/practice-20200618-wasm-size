@@ -7,3 +7,4 @@ yarn prebuild
 yarn build0
 yarn build1
 yarn build2
+yarn build3
