@@ -37,6 +37,7 @@ const makejs = (/** @type {number} */ length) => {
 
 const makerust = (/** @type {number} */ length) => {
 	return [
+		'#![no_std]',
 		'use wasm_bindgen::prelude::*;',
 		...Array.from({ length }).map((_, i) => {
 			const name = 'calc' + (i || '')
