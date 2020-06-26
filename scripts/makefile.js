@@ -49,8 +49,7 @@ pub fn ${name}(a: i32, b: i32) -> i32 {
 		a1 = b;
 		b1 = a;
 	};
-	#[allow(unused_parens)]
-	while (b1 != 0) {
+	while b1 != 0 {
 		let remainder = a1 % b1;
 		a1 = b1;
 		b1 = remainder;
